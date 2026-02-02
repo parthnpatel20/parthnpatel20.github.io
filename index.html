@@ -60,13 +60,15 @@
     <h2>Technical Skills</h2>
     <ul class="skills-grid">
       <li>Embedded C / C++</li>
-      <li>ARM Cortex-M</li>
+      <li>PCB Design</li>
+      <li> Intel 8051 /  ARM Cortex-M0 / ARM Cortex-M4 / Zynq-7000 SoC FPGA</li>
+      <li> Oscilloscopes, Interface Analyzers, Soldering, Function Generator </li>
       <li>FreeRTOS</li>
-      <li>SPI / I2C / UART</li>
-      <li>DMA / Timers / Interrupts</li>
-      <li>Python / Bash</li>
-      <li>BLE / Mesh</li>
-      <li>Git / Debugging</li>
+      <li>SPI / I2C / UART / CAN / Ethernet</li>
+      <li>GPIO / ADC/ DMA / Timers / Interrupts / PWM</li>
+      <li>Python / Bash / RUST</li>
+      <li>BLE</li>
+      <li>Git / Keil / STM32CubeIDE / Quartus / Vivado / Libero / FreeRTOS / Perf</li>
     </ul>
   </section>
 
@@ -76,11 +78,14 @@
 
     <div class="card">
       <h3>AWS Annapurna Labs</h3>
-      <span>Embedded Software Intern | May 2025 – Aug 2025</span>
+      <span>Embedded Software Intern | Austin, TX | May 2025 – Aug 2025</span>
       <ul>
-        <li>Built PMU-based performance profiling for ARM Graviton CPUs</li>
-        <li>Designed hardware-triggered profiling pipelines</li>
-        <li>Implemented ring-buffered pre-trigger capture systems</li>
+        <li> Extended AWS’sperformance profiling tool for ARM Graviton CPUs, adding low-overhead PMU instrumentation for cycle
+             counts, cache behavior, and microarchitectural stall analysis; improved profiling resolution by 25% on internal workloads.</li>
+        <li> Developedahardware-event–triggered profiling pipeline that automatically captures performance traces when CPU/cache
+             and custom hardware metrics thresholds are crossed; enabled efficient debugging for longer workloads</li>
+        <li> Built a ring-buffered pre-trigger capture subsystem that records context before and after performance violations, reducing
+             false negatives and eliminating >40% of manual reproduction effort during root-cause analysis.</li>
       </ul>
     </div>
 
@@ -88,9 +93,12 @@
       <h3>eInfochips (Arrow Electronics)</h3>
       <span>Embedded Firmware Intern | Jan 2024 – May 2024</span>
       <ul>
-        <li>Developed FreeRTOS-based BLE Mesh firmware</li>
-        <li>Debugged mesh provisioning and relay behavior</li>
-        <li>Automated testing using Python</li>
+        <li> Implemented FreeRTOS-based firmware for BLE Mesh devices, including task scheduling, synchronization primitives,
+             and ISR-safe messaging to support concurrent radio, sensor, and system tasks on constrained microcontrollers. </li>
+        <li> Integrated and debugged BLE Mesh provisioning, heartbeat, and relay features using JTAG/SWD trace and UART
+             logging to analyze packet flow, link failures, and mesh rejoin behavior. </li>
+        <li> Built a Python-based automation framework to repeatedly test BLE node bring-up, connection timing, and mesh reformation
+             behavior, reducing manual test effort by 50%. </li>
       </ul>
     </div>
   </section>
