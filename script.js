@@ -1,7 +1,15 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href"))
-      .scrollIntoView({ behavior: "smooth" });
-  });
+const toggle = document.getElementById("themeToggle");
+const body = document.body;
+
+// Load saved theme
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add("dark");
+  toggle.textContent = "☀️";
+}
+
+toggle.addEventListener("click", () => {
+  body.classList.toggle("dark");
+  const isDark = body.classList.contains("dark");
+  toggle.textContent = isDark ? "☀️" : "🌙";
+  localStorage.setItem("theme", isDark ? "dark" : "light");
 });
