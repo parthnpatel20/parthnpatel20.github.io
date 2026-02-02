@@ -44,32 +44,35 @@ nav {
   max-width: 1100px;
   margin: auto;
   padding: 14px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  position: relative;
 }
 
-.logo {
-  font-weight: 700;
-  color: white;
+/* CENTER NAV LINKS */
+.nav-center {
+  display: flex;
+  justify-content: center;
 }
 
 .nav-links a {
-  margin-left: 18px;
+  margin: 0 14px;
   text-decoration: none;
   color: white;
   font-weight: 500;
 }
 
-/* TOGGLE */
+/* TOGGLE FIXED TO RIGHT */
 .theme-toggle {
-  margin-left: 20px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
   background: none;
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
   color: white;
 }
+
 
 /* SECTIONS */
 section {
