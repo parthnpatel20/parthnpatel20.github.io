@@ -3,6 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2180Q1Z7DJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2180Q1Z7DJ');
+  </script>
+
   <title>Parth Patel | Embedded Systems</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
@@ -147,7 +157,13 @@
   <!-- RESUME -->
   <section id="resume">
     <h2>Resume</h2>
-    <a class="btn" href="assets/resume/Parth_N_Patel_Resume.pdf" target="_blank">
+    <a class="btn"
+      href="assets/resume/Parth_N_Patel_Resume.pdf"
+      target="_blank"
+      onclick="gtag('event', 'resume_download', {
+      event_category: 'engagement',
+      event_label: 'resume_pdf'
+      });">
       Download Resume (PDF)
     </a>
   </section>
